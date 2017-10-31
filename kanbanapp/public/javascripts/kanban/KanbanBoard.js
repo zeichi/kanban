@@ -1,7 +1,7 @@
 /**
  * Created by zeichi on 2017-04-05.
  */
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import List from './List';
 
 class KanbanBoard extends Component {
@@ -27,4 +27,5 @@ class KanbanBoard extends Component {
         );
     }
 }
+
 export default KanbanBoard;

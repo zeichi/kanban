@@ -1,7 +1,7 @@
 /**
  * Created by zeichi on 2017-04-05.
  */
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Card from './Card';
 
 class List extends Component {

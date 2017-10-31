@@ -1,7 +1,7 @@
 /**
  * Created by zeichi on 2017-04-05.
  */
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import CheckList from './CheckList';
 import marked from 'marked';
 
@@ -33,8 +33,8 @@ class Card extends Component {
         if (this.state.showDetails) {
             cardDetails = (
                 <div className="card_details">
-                    <span dangerouslySetInnerHTML={{__html:marked(this.props.description)}} />
-                    <CheckList cardId={this.props.id} tasks={this.props.tasks} />
+                    <span dangerouslySetInnerHTML={{__html: marked(this.props.description)}}/>
+                    <CheckList cardId={this.props.id} tasks={this.props.tasks}/>
                 </div>
             );
         }
@@ -55,7 +55,7 @@ class Card extends Component {
                 <div style={sideStyle}></div>
                 <div className={
                     this.state.showDetails ? "card_title card_title-is-open" : "card_title"
-                    } onClick={this.toggleState.bind(this)}>
+                } onClick={this.toggleState.bind(this)}>
                     {this.props.title}
                 </div>
                 {cardDetails}
